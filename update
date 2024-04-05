@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update && sudo apt upgrade -y
 sudo apt autoremove -y && sudo apt autoclean -y
-curl -d "$HOSTNAME Server Updated" 10.147.17.2/Servers
+curl -d "$HOSTNAME Server Updated" 192.168.1.2/Servers
 echo "$HOSTNAME Last Updated" > .logs/Update_log
 date >> .logs/Update_log
